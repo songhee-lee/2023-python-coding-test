@@ -1,3 +1,7 @@
+"""
+‘각 행마다 가장 작은 수를 찾은 뒤 그 수들 중에서 가장 큰 수’를 찾는다.
+"""
+
 import sys
 from collections import deque
 import time
