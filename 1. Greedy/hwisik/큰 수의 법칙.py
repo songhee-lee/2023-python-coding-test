@@ -1,3 +1,9 @@
+"""
+합이 최대로 되게 하려면 가장 큰 수를 k개만큼 더하고 두번째로 큰 수를 한 번 더하는 방법을 반복한다.
+예를 들어 m = 8, k = 3이라면 합이 최대가 되게 하려면
+⇒ 6 + 6 + 6 + 5 + 6 + 6 + 6 + 5
+"""
+
 import sys
 from collections import deque
 import time
