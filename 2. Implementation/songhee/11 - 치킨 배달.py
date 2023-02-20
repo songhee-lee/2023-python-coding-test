@@ -1,36 +1,51 @@
+"""Psuedo Code
+https://www.acmicpc.net/problem/15686
+
+1. 도시 크기 N, 치킨집 개수 M, 도시정보 입력 받기
+    - 0 빈칸, 1 집 2 치킨집
+    - 1 <= 집 <= 2*N 
+    - M <= 치킨집 <= 13
+2. 각 집마다 가까운 순으로 치킨집 정렬
+3. 치킨집 M개 고르기
+4. 도시의 치킨거리 최솟값 출력
+
+    * 치킨 거리 : 가장 가까운 치킨집과의 거리 |x - y|
+    * 도시의 치킨 거리 : 모든 치킨 거리의 합
+"""
+
 from itertools import combinations
 
-n, m = map(int, input().split())
-chicken, house = [], []
+# 1. 입력 받기
+N, M = map(int, input().split())
 
-for r in range(n):
-    data = list(map(int, input().split()))
-    for c in range(n):
-        if data[c] == 1:
-            house.append((r, c)) # 일반 집
-        elif data[c] == 2:
-            chicken.append((r, c)) # 치킨집
+chicken, house = [], []    # 치킨집 위치, 집 위치
+for i in range(1, N+1):
+    for j, x in enumerate(list(map(int, input().split()))) :
+        if x == 2 :
+            chicken.append((i, j+1))
+        elif x == 1 :
+            house.append((i, j+1))
 
-# 모든 치킨 집 중에서 m개의 치킨 집을 뽑는 조합 계산
-candidates = list(combinations(chicken, m))
+# 2. 각 집마다 가까운 순으로 치킨집 정렬
+c_distance = {}   # dict[집 위치] = [ (치킨집 위치, 거리), ..]
+for x_h, y_h in house:
+    distance = [ ( c[0], c[1], abs(x_h - c[0]) + abs(y_h - c[1])) for c in chicken]
+    distance = sorted(distance, key=lambda x: x[2])
+    c_distance[(x_h, y_h)] = distance
 
-# 치킨 거리의 합을 계산하는 함수
-def get_sum(candidate):
-    result = 0
-    # 모든 집에 대하여
-    for hx, hy in house:
-        # 가장 가까운 치킨 집을 찾기
-        temp = 1e9
-        for cx, cy in candidate:
-            temp = min(temp, abs(hx - cx) + abs(hy - cy))
-        # 가장 가까운 치킨 집까지의 거리를 더하기
-        result += temp
-    # 치킨 거리의 합 반환
-    return result
-
-# 치킨 거리의 합의 최소를 찾아 출력
+# 3. 치킨집 M개 고르기
 result = 1e9
-for candidate in candidates:
-    result = min(result, get_sum(candidate))
+for c in combinations(chicken, M) :
+    city_distance = 0
+
+    # 각 집마다 가장 가까운 치킨집 고르기
+    for x_h, x_y in house:
+        
+        for x_c, y_c, d in c_distance[(x_h, y_h)]:
+            if (x_c, y_c) in c:
+                city_distance += d
+                break
+    
+    result = min(result, city_distance)
 
 print(result)
