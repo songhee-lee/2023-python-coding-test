@@ -1,3 +1,7 @@
+"""
+‘n을 k로 최대한 많이 나누는 것’에 초점을 맞췄다.
+"""
+
 import sys
 from collections import deque
 import time

@@ -1,3 +1,8 @@
+"""
+모든 숫자를 전부 같게 만드는게 문제의 목적이다. 
+따라서, 전부 0으로 바꾸는 경우와 전부 1로 바꾸는 경우 중에서 더 적은 횟수를 가지는 경우가 답이 된다.
+"""
+
 import sys
 from collections import deque
 from pprint import pprint
