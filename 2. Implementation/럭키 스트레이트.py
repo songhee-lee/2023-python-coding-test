@@ -1,0 +1,5 @@
+score = input()
+left_score = list(map(int,score[:len(score)//2]))
+right_score = list(map(int,score[len(score)//2:]))
+if (sum(left_score)==sum(right_score)) : print('LUCKY')
+else : print('READY')
