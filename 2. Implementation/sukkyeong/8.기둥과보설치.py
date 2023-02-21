@@ -1,8 +1,8 @@
-# 현재 설치된 구조물이 '가능한' 구조물인지 확인하는 함수
+# 현재  설치된 구조물이 '가능한' 구조물인지 확인하는 함수
 def possible(answer):
     for x, y, stuff in answer:
         if stuff == 0:  # 설치된 것이 '기둥'인 경우
-            # '바닥 위' 혹은 '보의 한쪽 끝 부분 위' 혹은 '다른 기둥 위'라면 정상
+            # '바닥 위'혹은 '보의 한쪽 끝 부분 위' 혹은 '다른 기둥 위'라면 정상
             if y == 0 or [x - 1, y, 1] in answer or [x, y, 1] in answer or [x, y - 1, 0] in answer:
                 continue
             return False  # 아니라면 거짓(False) 반환
