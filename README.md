@@ -10,7 +10,7 @@
 | week0 | 2023.02.09 | 스터디 진행 규칙 및 세부 주제 논의                                   |
 | week1 | 2023.02.14 | [1. 그리디 Greedy (기초 문제 + 실전 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/1.%20Greedy)|
 | week2 | 2023.02.21 | [2. 구현 Implementation (기초 문제 + 실전 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/2.%20Implementation)|
-| week3 | 2023.02.28 | [3. BFS/DFS (기초 문제 + 실전 문제)]() |
+| week3 | 2023.02.28 | [3. BFS/DFS (기초 문제 + 실전 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/3.%20BFS:DFS) |
 | week4 | 2023. |                  |
 | week5 | 2023. |                  |
 | week6 | 2023. |                  |
