@@ -1,11 +1,11 @@
 def solution(s):
     answer = len(s)  # 최소 길이를 s의 길이로 초기화
 
-    # 문자열을 자를 단위를 1부터 len(s)까지 반복
+    # 문자열을 자를 단위를 1~ len(s)까지 반복
     for i in range(1, len(s)):
         unit = i  # 자르는 단위
         compressed = ""  # 압축한 문자열
-        prev = s[0:unit]  # 이전에 자른 문자열, 초기값은 첫 단위로 자른 문자열
+        prev = s[0:unit]  # 이전에 자른문자열, 초기값은 첫 단위로 자른 문자열
 
         count = 1  # 현재 문자열의 개수를 카운트하는 변수
         for j in range(unit, len(s), unit):  # 단위(unit)만큼 문자열을 자르면서 반복

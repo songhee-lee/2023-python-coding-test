@@ -1,11 +1,9 @@
-# 입력값 받아서 지도와 캐릭터의 위치, 방향 초기화
+# 입력값을 받아서 지도와 캐릭터의 위치, 방향 초기화
 n, m = map(int, input().split())
 x, y, direction = map(int, input().split())
 board = []
 for i in range(n):
     board.append(list(map(int, input().split())))
-
-# 이동 방법 구현 함수
 
 
 def turn_left():
