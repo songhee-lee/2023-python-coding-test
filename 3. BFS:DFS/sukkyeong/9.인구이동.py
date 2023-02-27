@@ -19,7 +19,7 @@ input = sys.stdin.readline
 
 n, m = map(int, input().split())
 
-# 지도 정보 입력 받기
+# 지도 정보 입력받기
 graph = []
 for _ in range(n):
     graph.append(list(map(int, input().split())))

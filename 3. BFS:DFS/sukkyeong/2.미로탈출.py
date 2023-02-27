@@ -1,6 +1,6 @@
 from collections import deque
 
-# 상하좌우 이동 방향
+# 상하좌우이동 방향
 dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
 

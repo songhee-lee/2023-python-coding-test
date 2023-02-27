@@ -15,7 +15,7 @@ def get_next_pos(pos, board):
         if board[pos1_next_x][pos1_next_y] == 0 and board[pos2_next_x][pos2_next_y] == 0:
             next_pos.append({(pos1_next_x, pos1_next_y),
                             (pos2_next_x, pos2_next_y)})
-    # 현재 로봇이 가로로 놓여 있는 경우
+    # 현재 로봇이가로로 놓여 있는 경우
     if pos1_x == pos2_x:
         for i in [-1, 1]:  # 위쪽으로 회전하거나, 아래쪽으로 회전
             # 위쪽 혹은 아래쪽 두 칸이 모두 비어 있다면

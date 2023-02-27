@@ -4,7 +4,7 @@ from collections import deque
 
 
 def bfs(x, y, ice_frame):
-    # 너비 우선 탐색을 위한 큐 생성
+    # 너비우선 탐색을 위한 큐 생성
     queue = deque()
     # 현재 위치를 큐에 삽입하고 방문 처리
     queue.append((x, y))

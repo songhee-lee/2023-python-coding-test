@@ -12,7 +12,7 @@ for i in range(n):
 
 s, x, y = map(int, input().split())
 
-virus.sort()  # 바이러스 종류를 기준으로 정렬합니다.
+virus.sort()  # 바이러스종류를 기준으로 정렬합니다.
 queue = deque(virus)
 
 dx = [-1, 0, 1, 0]

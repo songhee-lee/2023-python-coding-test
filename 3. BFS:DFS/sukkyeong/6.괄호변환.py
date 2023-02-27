@@ -15,7 +15,7 @@ def solution(p):
             v = p[i+1:]
             break
 
-    # 3. 올바른 괄호 문자열인지 판단
+    # 3. 올바른 괄호문자열인지 판단
     def is_correct(s):
         stack = []
         for c in s:

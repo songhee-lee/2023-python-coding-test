@@ -10,7 +10,7 @@ for i in range(n):
         if board[i][j] == 'X':
             empty.append((i, j))
 
-# 장애물을 3개 놓는 모든 경우의 수 생성
+# 장애물을 3개놓는 모든 경우의 수 생성
 obstacle_comb = combinations(empty, 3)
 
 # 학생이 감지될 수 있는지 확인

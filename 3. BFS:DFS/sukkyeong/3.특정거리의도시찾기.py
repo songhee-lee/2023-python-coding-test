@@ -5,7 +5,7 @@ INF = int(1e9)  # 무한대 값 설정
 n, m, k, x = map(int, input().split())  # 도시 개수, 도로 개수, 거리 정보, 출발 도시 번호 입력
 graph = [[] for _ in range(n+1)]  # 각 도시와 연결된 도시와 그 거리 정보를 담을 리스트
 
-# 모든 도로 정보 입력
+# 모든 도로 정보입력
 for _ in range(m):
     a, b = map(int, input().split())
     graph[a].append((b, 1))  # 거리는 1로 고정

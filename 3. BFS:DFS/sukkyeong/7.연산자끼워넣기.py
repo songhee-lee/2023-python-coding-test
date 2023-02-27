@@ -13,7 +13,7 @@ perm_op = set(permutations(op_list, n-1))
 min_ans = float('inf')
 max_ans = float('-inf')
 
-# 모든 연산자 조합에 대해 계산하여 최댓값과 최솟값 찾기
+# 모든 연산자 조합에대해 계산하여 최댓값과 최솟값 찾기
 for p in perm_op:
     cur = a[0]
     for i in range(n-1):
