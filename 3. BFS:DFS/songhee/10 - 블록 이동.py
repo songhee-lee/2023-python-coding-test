@@ -1,49 +1,67 @@
-# 파이썬
+"""
+- 2x1 크기의 로봇을 (N, N) 위치로 이동시키기
+- 0 빈칸 1 벽
+- 로봇은 90도씩 회전 가능
+- 앞으로, 아래로만 이동 가능하게 하면 실패 -> 뒤로 이동해야 하는 경우 있음
+"""
+
 from collections import deque
 
-def can_move(cur1, cur2, new_board):
-    Y, X = 0, 1
-    cand = []
-    # 평행이동
-    DELTAS = [(-1, 0), (1, 0), (0, 1), (0, -1)]
-    for dy, dx in DELTAS:
-        nxt1 = (cur1[Y] + dy, cur1[X] + dx)
-        nxt2 = (cur2[Y] + dy, cur2[X] + dx)
-        if new_board[nxt1[Y]][nxt1[X]] == 0 and new_board[nxt2[Y]][nxt2[X]] == 0:
-            cand.append((nxt1, nxt2))
-    # 회전
-    if cur1[Y] == cur2[Y]: # 가로방향 일 때
-        UP, DOWN = -1, 1
-        for d in [UP, DOWN]:
-            if new_board[cur1[Y]+d][cur1[X]] == 0 and new_board[cur2[Y]+d][cur2[X]] == 0:
-                cand.append((cur1, (cur1[Y]+d, cur1[X])))
-                cand.append((cur2, (cur2[Y]+d, cur2[X])))
-    else: # 세로 방향 일 때
-        LEFT, RIGHT = -1, 1
-        for d in [LEFT, RIGHT]:
-            if new_board[cur1[Y]][cur1[X]+d] == 0 and new_board[cur2[Y]][cur2[X]+d] == 0:
-                cand.append(((cur1[Y], cur1[X]+d), cur1))
-                cand.append(((cur2[Y], cur2[X]+d), cur2))
-                
-    return cand
+def move(tail, head, board):
 
+    tX, tY = tail[0], tail[1]
+    hX, hY = head[0], head[1]
+    locs = []   # 이동 가능한 위치
+
+    # 앞, 뒤, 위, 아래로 이동
+    dx = (0, 0, -1, 1)  
+    dy = (-1, 1, 0, 0)
+    for i in range(4):
+        n_tX, n_tY = tX+dx[i], tY+dy[i]
+        n_hX, n_hY = hX+dx[i], hY+dy[i]
+
+        if board[n_tX][n_tY] == 0 and board[n_hX][n_hY] == 0:
+            locs.append( ((n_tX, n_tY),(n_hX, n_hY)) )
+    
+    # 가로 회전
+    if tX == hX :
+        for d in [-1, 1]:   # 위로 회전, 아래로 회전 방향
+            if board[tX+d][tY] == 0 and board[hX+d][hY] == 0:
+                locs.append( (tail, (tX+d, tY)) )   # Tail 기준
+                locs.append( ((hX+d, hY), head) )   # Head 기준
+    # 세로 회전
+    else:
+        for d in [-1, 1]:   # 좌로 회전, 우로 회전 방향
+            if board[tX][tY+d] == 0 and board[hX][hY+d] == 0:
+                locs.append( ((tX, tY+d), tail) )     # Tail 기준
+                locs.append( ((hX, hY+d), head) )     # Head 기준
+    
+    return locs
+    
+    
 def solution(board):
-    # board 외벽 둘러싸기
+
     N = len(board)
-    new_board = [[1] * (N+2) for _ in range(N+2)]
+    q = deque([ ((1,1), (1,2), 0) ])    # 로봇 뒤, 앞, 시간
+    check = set([ ((1,1), (1,2)) ])        # 로봇이 갔던 위치 체크
+
+    # board 에 외벽 추가
+    tmp = [ [1]*(N+2) for _ in range(N+2)]
     for i in range(N):
         for j in range(N):
-            new_board[i+1][j+1] = board[i][j]
+            tmp[i+1][j+1] = board[i][j]
+    board = tmp
 
-    # 현재 좌표 위치 큐 삽입, 확인용 set
-    que = deque([((1, 1), (1, 2), 0)])
-    confirm = set([((1, 1), (1, 2))])
+    # 로봇 이동하기
+    while q:
+        tail, head, times = q.popleft()
 
-    while que:
-        cur1, cur2, count = que.popleft()
-        if cur1 == (N, N) or cur2 == (N, N):
-            return count
-        for nxt in can_move(cur1, cur2, new_board):
-            if nxt not in confirm:
-                que.append((*nxt, count+1))
-                confirm.add(nxt)
+        # (N, N) 도착하면 종료
+        if tail == (N, N) or head == (N, N):
+            return times
+
+        # 이동 가능한 위치로 모두 이동해보기
+        for next in move(tail, head, board):
+            if next not in check:
+                q.append( (next[0], next[1], times+1) )
+                check.add(next)
