@@ -12,48 +12,21 @@ from itertools import combinations
 def check(maps, i, j):
     # 3. 선생님 감시 확인 : 상하좌우 감시 (장애물 투시 불가)
     # 학생 발견하면 True
-
-    # 상
-    up = i
-    while up >= 0 :
-        x = maps[up][j]
-        if x == 'O':
-            break
-        elif x == 'S':
-            return True
-        up -= 1
-
-    # 하
-    down = i
-    while down < N:
-        x = maps[down][j]
-        if x == 'O':
-            break
-        elif x == 'S':
-            return True 
-        down += 1
-
-    # 좌
-    left = j
-    while left >= 0:
-        x = maps[i][left]
-        if x == 'O':
-            break
-        elif x == 'S':
-            return True
-        left -= 1
-
-    # 우
-    right = j
-    while right < N:
-        x = maps[i][right]
-        if x == 'O':
-            break
-        elif x == 'S':
-            return True
-        right += 1
+    
+    dx = (-1, 1, 0, 0)
+    dy = (0, 0, -1, 1)
+    
+    for k in range(4):
+        nx, ny = i+dx[k], j+dy[k]
         
-    return False
+        while 0 <= nx < N and 0 <= ny < N:
+            x = maps[dx][dy]
+            if  x == 'O':
+                break
+            elif x == 'S':
+                return True
+            
+            nx, ny = nx+dx[k], nx+dy[k]
 
 def check_all(teachers):
     for x, y in teachers:
