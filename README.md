@@ -11,7 +11,8 @@
 | week1 | 2023.02.14 | [1. 그리디 Greedy (기초 문제 + 실전 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/1.%20Greedy)|
 | week2 | 2023.02.21 | [2. 구현 Implementation (기초 문제 + 실전 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/2.%20Implementation)|
 | week3 | 2023.02.28 | [3. BFS/DFS (기초 문제 + 실전 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/3.%20BFS:DFS) |
-| week4 | 2023. |                  |
+| week4 | 2023.03.07 | [3. BFS/DFS (추가 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/3.%20BFS:DFS)|
+| week4 | 2023.03.10 | [2022 KAKAO TECH INTERNSHIP](https://school.programmers.co.kr/learn/challenges?order=recent&languages=python3&page=1&partIds=31236)                 |
 | week5 | 2023. |                  |
 | week6 | 2023. |                  |
 | week7 | 2023. |                  |
