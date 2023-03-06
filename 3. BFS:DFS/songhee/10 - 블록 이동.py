@@ -64,4 +64,8 @@ def solution(board):
         for next in move(tail, head, board):
             if next not in check:
                 q.append( (next[0], next[1], times+1) )
+<<<<<<< Updated upstream
                 check.add(next)
+=======
+                check.add(next)
+>>>>>>> Stashed changes
