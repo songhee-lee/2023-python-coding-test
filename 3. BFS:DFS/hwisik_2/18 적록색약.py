@@ -40,6 +40,7 @@ for i in range(n):
             dfs(i, j, graph[i][j])
             non_weak_count += 1
             
+            
 # 적록색약 ⭕️
 visited = [[0] * n for _ in range(n)]
 weak_count = 0 # 구역 수
