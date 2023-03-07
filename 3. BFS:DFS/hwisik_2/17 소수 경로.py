@@ -30,7 +30,7 @@ def bfs():
                 
                 # 소수이고, 1000 ~ 10000사이의 수 이며, 방문한 적이 없는 경우
                 if is_prime[nxt] and change_count[nxt] == -1:
-                    change_count[nxt] = change_count[cur] + 1
+                    change_count[nxt] = change_count[cur] + 1 # 변환 횟수 + 1
                     queue.append(nxt)
                     
     return -1
@@ -49,6 +49,7 @@ is_prime = [False, False] + [True] * 9998 # 소수 판별 배열
 # 에라토스테네스의 체 수행
 make_eratosthenes() 
 
+# 각 테스트 케이스에 대해서...
 for _ in range(t):
     a, b = map(int, input().split())
     
