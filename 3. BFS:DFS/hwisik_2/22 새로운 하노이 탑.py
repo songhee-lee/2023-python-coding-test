@@ -8,6 +8,8 @@
     - 막대B : B의 마지막 원판 -> A로 이동 or C로 이동
     - 막대C : C의 마지막 원판 -> A로 이동 or B로 이동
 - 만약, 막대A 에는 원판 A만, 막대B에는 원판B만, 막대C에는 원판C만 있다면 BFS를 종료한다.
+
+-> ✅'다시풀기'
 '''
 
 from collections import deque
