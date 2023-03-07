@@ -29,18 +29,17 @@ for _ in range(N):
 dx = (-1, 1, 0, 0)
 dy = (0, 0, -1, 1)
 
-result = { 'R':0, 'G':0, 'B':0}
+# 색약 X
+cnt = 0
 visited = [[True]*N for _ in range(N)]
 for i in range(N):
     for j in range(N):
         if visited[i][j] :
             bfs(i, j, maps[i][j])
-            result[maps[i][j]] += 1
+            cnt += 1
 
-r, g, b = result['R'], result['G'], result['B']
-print(r+g+b, end=' ')
-
-result = [0, 0]
+# 색약 O
+cnt_weak = 0
 visited = [[True]*N for _ in range(N)]
 for i in range(N):
     for j in range(N):
@@ -48,8 +47,8 @@ for i in range(N):
             color = maps[i][j]
             if color == 'B':
                 bfs(i, j, 'B')
-                result[1] += 1
             else:
                 bfs(i, j, {'R', 'G'})
-                result[0] += 1
-print(sum(result))
+            cnt_weak += 1
+            
+print(f"{cnt} {cnt_weak}")
