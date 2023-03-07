@@ -1,10 +1,13 @@
+'''
+- 문제의 설명에 충실히 구현
+'''
 from collections import deque
 import sys
-from copy import *
 
 n = int(input())
 queue = deque()
 
+# 명령어 N개 입력
 for _ in range(n):
     order = list(sys.stdin.readline().rstrip().split())
     if order[0] == 'push_front':
