@@ -23,12 +23,13 @@ for _ in range(T):
 
     count = 0   # 순열 사이클 개수
     visited = [True]*(N+1)  # 방문 표시
+
     for i in range(1, N+1):
-        if numbers[i] == i:    
+        if numbers[i] == i: # 자기 자신을 가리키면 하나의 싸이클
             count += 1
             continue
 
-        if visited[i] :
+        if visited[i] :     # 방문하지 않은 경우 사이클 확인
             dfs(i)
             count += 1
     
