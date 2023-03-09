@@ -31,20 +31,23 @@ for _ in range(T):
 
     while q:
         now = q.popleft()
-        s_now = str(now)
-
+        
         if now == dest:
             break
         
+        s_now = list(str(now))
+
         # 각 자릿수별로 숫자 바꾸기
         for i in range(4):
             for j in range(10):
-                x = int(s_now[:i] + str(j) + s_now[i+1:])
+                s_new = s_now[:]
+                s_new[i] = str(j)
+                new = int(''.join(s_new))
                 
                 # 방문 안한 1000 이상인 소수인 경우
-                if visited[x] == -1 and prime[i] and x > 1000:
-                    visited[x] = visited[now]+1
-                    q.append(x)
+                if 999 < new < 10000 and prime[new] and visited[new] == -1:
+                    visited[new] = visited[now]+1
+                    q.append(new)
 
     if visited[dest] == -1:
         print("Impossible")
