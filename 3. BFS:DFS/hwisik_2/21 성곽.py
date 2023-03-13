@@ -15,69 +15,77 @@
 '''
 from collections import deque
 
-def get_room_area(x, y):
+# BFS
+def bfs(x, y):
     queue = deque([(x, y)])
     visited[x][y] = 1
-    room_area = 1
+    room_count = 1 # 방의 개수
     
     while queue:
         x, y = queue.popleft()
         for i in range(4):
             nx, ny = x + dx[i], y + dy[i]
             if 0 <= nx < m and 0 <= ny < n and not visited[nx][ny]:
+                
+                # 벽이 있는지 확인
                 if i == 0:
-                    if 1 & graph[x][y]: continue
+                    if 1 & graph[x][y]: continue # 서쪽
                 elif i == 1:
-                    if 2 & graph[x][y]: continue
+                    if 2 & graph[x][y]: continue # 북쪽
                 elif i == 2:
-                    if 4 & graph[x][y]: continue
+                    if 4 & graph[x][y]: continue # 동쪽
                 elif i == 3:
-                    if 8 & graph[x][y]: continue
+                    if 8 & graph[x][y]: continue # 남쪽
                 
                 visited[nx][ny] = 1
                 queue.append((nx, ny))
-                room_area += 1
+                room_count += 1 # 방의 개수 + 1
                 
-    return room_area
-            
+    return room_count
+
 n, m = map(int, input().split())
 
 graph = []
-for _ in range(m):
-    graph.append(list(map(int, input().split())))
+visited = [[0] * n for _ in range(m)]
 
 # 방향 정보(서, 북, 동, 남)
 dx = [0, -1, 0, 1]
 dy = [-1, 0, 1, 0]
 
-# 이 성에 있는 방의 개수
-# 가장 넓은 방의 넓이
-# 하나의 벽을 제거하여 얻을 수 있는 가장 넓은 방의 크기
-room_count = 0
-max_room_area = 0
-max_room_area_when_removed_wall = 0
+for _ in range(m):
+    input_data = list(map(int, input().split()))
+    graph.append(input_data)
 
-visited = [[0] * n for _ in range(m)]
+total_room_count = 0 # 1. 이 성에 있는 방의 개수
+max_room_size = 0 # 2. 가장 넓은 방의 넓이
+max_room_size_when_removed_wall = 0 # 3. 하나의 벽을 제거하여 얻을 수 있는 가장 넓은 방의 크기
 
-# 이 성에 있는 방의 개수와 가장 넓은 방의 넓이를 구한다.
+# 각 방에 대해서 BFS 수행
 for i in range(m):
     for j in range(n):
         if not visited[i][j]:
-            max_room_area = max(max_room_area, get_room_area(i, j))
-            room_count += 1
+            max_room_size = max(max_room_size, bfs(i, j))
+            total_room_count += 1
 
-# 하나의 벽을 제거하여 얻을 수 있는 가장 넓은 방의 크기를 구한다.
+# 하나의 벽을 제거했을 때
 for i in range(m):
     for j in range(n):
-        wall_dir = 1
-        while wall_dir < 9:
-            if wall_dir & graph[i][j]:
+        remove_wall_dir = 1 # 시작은 서쪽 확인
+        while remove_wall_dir < 9:
+            if remove_wall_dir & graph[i][j]: # 벽 있는지 확인
                 visited = [[0] * n for _ in range(m)]
-                graph[i][j] -= wall_dir
-                max_room_area_when_removed_wall = max(max_room_area_when_removed_wall,get_room_area(i, j))
-                graph[i][j] += wall_dir
-            wall_dir *= 2
                 
-print(room_count)
-print(max_room_area)
-print(max_room_area_when_removed_wall)
+                graph[i][j] -= remove_wall_dir # 벽 제거
+                
+                # 벽 제거했을 때 BFS
+                max_room_size_when_removed_wall = max(max_room_size_when_removed_wall, bfs(i, j))
+                
+                graph[i][j] += remove_wall_dir # 다음을 위해 벽 재건
+                
+            # 1 : 서, 2 : 북, 4 : 동, 8 : 남
+            remove_wall_dir *= 2
+
+# 출력
+print(total_room_count)
+print(max_room_size)
+print(max_room_size_when_removed_wall)
