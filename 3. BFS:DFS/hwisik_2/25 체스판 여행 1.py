@@ -12,7 +12,6 @@
 -> ✅다시풀기
 '''
 from collections import deque
-from pprint import pprint
 
 # 범위 확인
 def is_range(x, y):
@@ -26,6 +25,8 @@ def bfs():
     KNIGHT = 2
     
     queue = deque()
+    
+    # visited = [행][열][칸의 값(1, 2, ..., N^2)][체스 말 종류]
     visited = [[[[0 for _ in range(3)] for _ in range(n ** 2 + 1)] for _ in range(n)] for _ in range(n)]
     
     step_pos = []
@@ -36,7 +37,8 @@ def bfs():
             for j in range(n):
                 if graph[i][j] == (num + 1):
                     step_pos.append((i, j))
-                
+    
+    # 처음 방문해야 하는 칸(2가 적힌 칸)의 위치
     x, y = step_pos[0]
 
     # 룩, 비숍, 나이트 추가
@@ -48,8 +50,9 @@ def bfs():
     visited[x][y][2][ROOK] = 1
     visited[x][y][2][BISHOP] = 1
     visited[x][y][2][KNIGHT] = 1
-    
+
     while queue:
+        # 행 / 열 / 이동 횟수 / 현재 도착한 칸에 적힌 수 / 체스 말 종류
         x, y, count, step, chess_type = queue.popleft()
 
         # N^2가 적힌 칸에 도착
@@ -69,7 +72,7 @@ def bfs():
         
         # 룩인 경우
         if chess_type == ROOK:
-            for i in range(4): 
+            for i in range(4):
                 nx, ny = x, y
                 
                 # 범위 안에서 가로, 세로로 무한정 이동 가능
@@ -85,7 +88,7 @@ def bfs():
                     # 다음으로 가야하는 수가 적힌 칸에 도착
                     if nx == nxt_step_x and ny == nxt_step_y:
                         queue.append((nx, ny, count + 1, step + 1, ROOK))
-                    # 다음 수가 아닌, 다른 칸에 도착
+                    # 다음 수가 아닌, 다른 칸에 도착(= 경유하는 느낌)
                     else:
                         queue.append((nx, ny, count + 1, step, ROOK))
         # 비숍인 경우
@@ -106,7 +109,7 @@ def bfs():
                     # 다음으로 가야하는 수가 적힌 칸에 도착
                     if nx == nxt_step_x and ny == nxt_step_y:
                         queue.append((nx, ny, count + 1, step + 1, BISHOP))
-                    # 다음 수가 아닌, 다른 칸에 도착
+                    # 다음 수가 아닌, 다른 칸에 도착(= 경유하는 느낌)
                     else:
                         queue.append((nx, ny, count + 1, step, BISHOP))
         # 나이트인 경우
@@ -122,7 +125,7 @@ def bfs():
                 # 다음으로 가야하는 수가 적힌 칸에 도착
                 if nx == nxt_step_x and ny == nxt_step_y:
                     queue.append((nx, ny, count + 1, step + 1, KNIGHT))
-                # 다음 수가 아닌, 다른 칸에 도착
+                # 다음 수가 아닌, 다른 칸에 도착(= 경유하는 느낌)
                 else:
                     queue.append((nx, ny, count + 1, step, KNIGHT))
 
