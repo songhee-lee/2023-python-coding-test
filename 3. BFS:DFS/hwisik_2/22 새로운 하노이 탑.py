@@ -15,18 +15,18 @@
 from collections import deque
 
 def bfs():
-    queue = deque([(init_state[0], init_state[1], init_state[2], 0)])
+    queue = deque([(hanoi[0], hanoi[1], hanoi[2], 0)])
     
     while queue:
         a, b, c, count = queue.popleft()
-        cur_state = a + '/' + b + '/' + c
+        state = a + '/' + b + '/' + c
         
         if a == 'A' * len(a) and b == 'B' * len(b) and c == 'C' * len(c):
             return count
-
-        if cur_state not in visited:
-            visited.add(cur_state)
-
+        
+        if state not in state_visited:
+            state_visited.add(state)
+            
             if len(a) > 0:
                 queue.append((a[:-1], b + a[-1], c, count + 1))
                 queue.append((a[:-1], b, c + a[-1], count + 1))
@@ -38,18 +38,17 @@ def bfs():
             if len(c) > 0:
                 queue.append((a, b + c[-1], c[:-1], count + 1))
                 queue.append((a + c[-1], b, c[:-1], count + 1))
-    
 
-visited = set()
-init_state = []
+hanoi = []
+state_visited = set()
 
 for _ in range(3):
     input_data = input().split()
     if len(input_data) > 1:
-        init_state.append(input_data[-1])
+        hanoi.append(input_data[-1])
     else:
-        init_state.append('')
-        
+        hanoi.append('')
+
 ret = bfs()
 
 print(ret)
