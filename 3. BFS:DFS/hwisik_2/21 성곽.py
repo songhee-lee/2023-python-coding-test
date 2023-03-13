@@ -15,15 +15,6 @@
 '''
 from collections import deque
 
-# n, m = map(int, input().split())
-
-# graph = []
-
-# for _ in range(m):
-#     input_data = list(map(int, input().split()))
-#     graph.append(input_data)
-
-
 # BFS
 def bfs(x, y):
     queue = deque([(x, y)])

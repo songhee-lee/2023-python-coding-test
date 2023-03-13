@@ -8,7 +8,10 @@
     - 체스말의 종류에 따라 이동을 수행한다.
         - 만약, 다음 칸에 도착했다면, Step을 늘려서 큐에 추가한다.
         - 다음 칸이 아니라면, Step을 그대로 두고 큐에 추가한다.
-
+- '체스판 여행 1' 과 다른 점
+    - 말을 바꾸는 최소 횟수를 구해야한다
+    - 방문 표시 배열을 말을 바꾸는 횟수를 저장하는 배열로 대체한다.
+    
 -> ✅다시풀기
 '''
 from collections import deque
@@ -21,8 +24,12 @@ def is_range(x, y):
 
 # BFS
 def bfs():
+    
+    # 최소 시간, 말을 바꾸는 최소 횟수를 구하기 위해, 'inf'로 초기화
     min_time = float('inf')
     min_change = float('inf')
+    
+    # 룩, 비숍, 나이트 구별
     ROOK = 0
     BISHOP = 1
     KNIGHT = 2
@@ -57,11 +64,11 @@ def bfs():
 
         # 값이 N^2 칸에 도착했다면
         if step == n ** 2 + 1:
-            if count < min_time:
+            if count < min_time: # 최소 시간일 경우
                 min_time = count
                 min_change = change
-            elif count == min_time:
-                if change < min_change:
+            elif count == min_time: # 최소 시간이 나오는 방법이 여러가지인 경우
+                if change < min_change: # 말을 바꾼 횟수가 최소라면
                     min_change = change
             continue
 
@@ -87,6 +94,7 @@ def bfs():
                     if change >= change_time[nx][ny][step][ROOK]: continue
                     
                     change_time[nx][ny][step][ROOK] = change
+                    
                     if nx == nxt_step_x and ny == nxt_step_y: # 다음 칸에 도착했다면
                         queue.append((nx, ny, count + 1, change, step + 1, ROOK))
                     else:
@@ -104,6 +112,7 @@ def bfs():
                     if change >= change_time[nx][ny][step][BISHOP]: continue
                     
                     change_time[nx][ny][step][BISHOP] = change
+                    
                     if nx == nxt_step_x and ny == nxt_step_y: # 다음 칸에 도착했다면
                         queue.append((nx, ny, count + 1, change, step + 1, BISHOP))
                     else: 
@@ -118,12 +127,14 @@ def bfs():
                 if change >= change_time[nx][ny][step][KNIGHT]: continue
                 
                 change_time[nx][ny][step][KNIGHT] = change
+                
                 if nx == nxt_step_x and ny == nxt_step_y: # 다음 칸에 도착했다면
                     queue.append((nx, ny, count + 1, change, step + 1, KNIGHT))
                 else:
                     queue.append((nx, ny, count + 1, change, step, KNIGHT))
                     
     print(min_time, min_change)
+    
 graph = []
 
 # 룩, 비숍, 나이트의 방향 정보

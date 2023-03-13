@@ -4,6 +4,13 @@
 2. 서로 인접한 칸으로만 이동이 가능하다.
     - '1'은 이동할 수 있는 칸
     - '0'은 이동할 수 없는 칸
+
+- (1, 1)에서 시작해서 연결된 모든 노드를 확인한다.
+- 방문하지 않았고 이동할 수 있는 칸(1)이라면 큐에 추가하고 이동 칸 수를 갱신한다.
+    - 여기서 방문표시 = 이동 칸 수
+        - dist[i] == -1 : 방문하지 않았음
+        - dist[i] != -1 : 방문했음
+        -> 항상 최소의 칸 수를 얻을 수 있다.
 '''
 
 from collections import deque
@@ -11,7 +18,6 @@ from collections import deque
 n, m = map(int, input().split())
 
 graph = []
-visited = [[0] * m for _ in range(m)]
 dist = [[-1] * m for _ in range(n)]
 dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
