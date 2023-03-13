@@ -1,3 +1,5 @@
+''''''
+
 import sys
 N = int(input())
 parent = [0]*(N+1)
