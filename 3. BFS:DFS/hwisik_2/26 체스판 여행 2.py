@@ -134,6 +134,7 @@ def bfs():
                     queue.append((nx, ny, count + 1, change, step, KNIGHT))
                     
     print(min_time, min_change)
+    
 graph = []
 
 # 룩, 비숍, 나이트의 방향 정보
