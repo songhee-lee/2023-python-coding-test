@@ -91,12 +91,12 @@ def bfs(graph, start, visited):
 | 연구소                | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/3.%20BFS:DFS/songhee/BFS/06.%20%EC%97%B0%EA%B5%AC%EC%86%8C%2014502.py) | [code]                                                       | [code] | [code] |
 | 아기 상어2            | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/3.%20BFS:DFS/songhee/BFS/07.%20%EC%95%84%EA%B8%B0%20%EC%83%81%EC%96%B42%2017086.py) | [code]                                                       | [code] | [code] |
 | 성곽                  | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/3.%20BFS:DFS/songhee/BFS/08.%20%EC%84%B1%EA%B3%BD%202234.py) | [code]                                                       | [code] | [code] |
-| 새로운 하노이 탑      | [code] ✅                                                     | [code]                                                       | [code] | [code] |
-| 연구소 2              | [code]                                                       | [code]                                                       | [code] | [code] |
-| 0과 1                 | [code] ✅                                                     | [code]                                                       | [code] | [code] |
-| 체스판 여행 1         | [code]                                                       | [code]                                                       | [code] | [code] |
-| 체스판 여행 2         | [code]                                                       | [code]                                                       | [code] | [code] |
-| 구슬 탈출 4           | [code]                                                       | [code]                                                       | [code] | [code] |
+| 새로운 하노이 탑      | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/3.%20BFS:DFS/songhee/BFS/09.%20%EC%83%88%EB%A1%9C%EC%9A%B4%20%ED%95%98%EB%85%B8%EC%9D%B4%20%ED%83%91%2012906.py) ✅ | [code]                                                       | [code] | [code] |
+| 연구소 2              | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/3.%20BFS:DFS/songhee/BFS/10.%20%EC%97%B0%EA%B5%AC%EC%86%8C2%2017141.py) | [code]                                                       | [code] | [code] |
+| 0과 1                 | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/3.%20BFS:DFS/songhee/BFS/11.%200%EA%B3%BC1%208111.py) ❗ | [code]                                                       | [code] | [code] |
+| 체스판 여행 1         | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/3.%20BFS:DFS/songhee/BFS/12.%20%EC%B2%B4%EC%8A%A4%ED%8C%90%20%EC%97%AC%ED%96%891%2016959.py) | [code]                                                       | [code] | [code] |
+| 체스판 여행 2         | [code ](https://github.com/songhee-lee/2023-python-coding-test/blob/main/3.%20BFS:DFS/songhee/BFS/13.%20%EC%B2%B4%EC%8A%A4%ED%8C%90%20%EC%97%AC%ED%96%892%2016952.py)✅ | [code]                                                       | [code] | [code] |
+| 구슬 탈출 4           | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/3.%20BFS:DFS/songhee/BFS/14.%20%EA%B5%AC%EC%8A%AC%20%ED%83%88%EC%B6%9C4%2015653.py) | [code]                                                       | [code] | [code] |
 
 
 
