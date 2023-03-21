@@ -14,8 +14,8 @@
 | week4 | 2023.03.07 | [3. BFS/DFS (추가 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/3.%20BFS:DFS)|
 | week4 | 2023.03.10 | [2022 KAKAO TECH INTERNSHIP](https://school.programmers.co.kr/learn/challenges?order=recent&languages=python3&page=1&partIds=31236)                 |
 | week5 | 2023.03.14 | [4. 정렬 Sort (기초 문제 + 실전 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/4.%20Sort) |
-| week6 | 2023.03.21 | [5. 이진 탐색 Binary Search (기초 문제 + 실전 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/5.%20Binary%20Search) & 2022 KAKAO TECH INTERNSHIP 해설                 |
-| week7 | 2023. |                  |
+| week6 | 2023.03.21 | [5. 이진 탐색 Binary Search (기초 문제 + 실전 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/5.%20Binary%20Search) & [2022 KAKAO TECH INTERNSHIP 해설](https://github.com/songhee-lee/2023-python-coding-test/tree/main/%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C/2022%20KAKAO%20TECH%20INTERNSHIP) |
+| week7 | 2023.03.28 | [6. 다이나믹 프로그래밍 DP (기초 문제 + 실전 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/6.%20DP) & [5. 이진 탐색 (추가문제)]((https://github.com/songhee-lee/2023-python-coding-test/tree/main/5.%20Binary%20Search)) |
 | week8 | 2023. |                  |
 | week9 | 2023. |                  |
 | week10 | 2023. |                  |
