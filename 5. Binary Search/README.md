@@ -55,35 +55,35 @@ def binary_search(array, target, start, end):
 
 ### 문제
 
-|                                         | 송희 | 숙경 | 주현 | 휘식 |
-| --------------------------------------- | ---- | ---- | ---- | ---- |
-| 부품 찾기                               |      |      |      |      |
-| 떡볶이 떡 만들기                        |      |      |      |      |
-| 정렬된 배열에서 특정 수의 개수 구하기 ❗ |      |      |      |      |
-| 고정점 찾기                             |      |      |      |      |
-| 공유기 설치 ✅                           |      |      |      |      |
-| 가사 검색 ✅                             |      |      |      |      |
-| 숫자 카드 2                             |      |      |      |      |
-| 좌표 압축                               |      |      |      |      |
-| 세 수의 합                              |      |      |      |      |
-| 숫자 카드                               |      |      |      |      |
-| 차집합                                  |      |      |      |      |
-| 용액                                    |      |      |      |      |
-| 좋다                                    |      |      |      |      |
-| 두 배열의 합                            |      |      |      |      |
-| 합이 0인 네 정수                        |      |      |      |      |
-| 가장 긴 증가하는 부분 수열2             |      |      |      |      |
-| 예산                                    |      |      |      |      |
-| 택배                                    |      |      |      |      |
-| 수 찾기                                 |      |      |      |      |
-| 나무 자르기                             |      |      |      |      |
-| 랜선 자르기                             |      |      |      |      |
-| 카드                                    |      |      |      |      |
-| 구간 나누기2                            |      |      |      |      |
-| 중량제한                                |      |      |      |      |
-| 배열에서 이동                           |      |      |      |      |
-| K번째 수                                |      |      |      |      |
-| 놀이공원                                |      |      |      |      |
-| 사다리                                  |      |      |      |      |
-| 선분과 점                               |      |      |      |      |
+|                                         | 송희                                                         | 숙경 | 주현 | 휘식 |
+| --------------------------------------- | ------------------------------------------------------------ | ---- | ---- | ---- |
+| 부품 찾기                               | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/01.%20%EB%B6%80%ED%92%88%20%EC%B0%BE%EA%B8%B0.py) |      |      |      |
+| 떡볶이 떡 만들기                        | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/02.%20%EB%96%A1%EB%B3%B6%EC%9D%B4%20%EB%96%A1%20%EB%A7%8C%EB%93%A4%EA%B8%B0.py) |      |      |      |
+| 정렬된 배열에서 특정 수의 개수 구하기 ❗ | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/03.%20%EC%A0%95%EB%A0%AC%EB%90%9C%20%EB%B0%B0%EC%97%B4%EC%97%90%EC%84%9C%20%ED%8A%B9%EC%A0%95%20%EC%88%98%EC%9D%98%20%EA%B0%9C%EC%88%98%20%EA%B5%AC%ED%95%98%EA%B8%B0.py) |      |      |      |
+| 고정점 찾기                             | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/04.%20%EA%B3%A0%EC%A0%95%EC%A0%90%20%EC%B0%BE%EA%B8%B0.py) |      |      |      |
+| 공유기 설치 ✅                           | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/05.%20%EA%B3%B5%EC%9C%A0%EA%B8%B0%20%EC%84%A4%EC%B9%98.py) |      |      |      |
+| 가사 검색 ✅                             | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/06.%20%EA%B0%80%EC%82%AC%20%EA%B2%80%EC%83%89.py) |      |      |      |
+| 숫자 카드 2                             | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/07.%20%EC%88%AB%EC%9E%90%20%EC%B9%B4%EB%93%9C2.py) |      |      |      |
+| 좌표 압축                               | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/08.%20%EC%A2%8C%ED%91%9C%20%EC%95%95%EC%B6%95.py) |      |      |      |
+| 세 수의 합                              | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/09.%20%EC%84%B8%20%EC%88%98%EC%9D%98%20%ED%95%A9.py) |      |      |      |
+| 숫자 카드                               | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/10.%20%EC%88%AB%EC%9E%90%20%EC%B9%B4%EB%93%9C.py) |      |      |      |
+| 차집합                                  | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/11.%20%EC%B0%A8%EC%A7%91%ED%95%A9.py) |      |      |      |
+| 용액                                    | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/12.%20%EC%9A%A9%EC%95%A1.py) |      |      |      |
+| 좋다                                    | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/13.%20%EC%A2%8B%EB%8B%A4.py) |      |      |      |
+| 두 배열의 합                            | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/14.%20%EB%91%90%20%EB%B0%B0%EC%97%B4%EC%9D%98%20%ED%95%A9.py) |      |      |      |
+| 합이 0인 네 정수                        | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/15.%20%ED%95%A9%EC%9D%B4%200%EC%9D%B8%20%EB%84%A4%20%EC%A0%95%EC%88%98.py) |      |      |      |
+| 가장 긴 증가하는 부분 수열2             | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/16.%20%EA%B0%80%EC%9E%A5%20%EA%B8%B4%20%EC%A6%9D%EA%B0%80%ED%95%98%EB%8A%94%20%EB%B6%80%EB%B6%84%20%EC%88%98%EC%97%B42.py) |      |      |      |
+| 예산                                    | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/17.%20%EC%98%88%EC%82%B0.py) |      |      |      |
+| 택배                                    |                                                              |      |      |      |
+| 수 찾기                                 |                                                              |      |      |      |
+| 나무 자르기                             |                                                              |      |      |      |
+| 랜선 자르기                             |                                                              |      |      |      |
+| 카드                                    |                                                              |      |      |      |
+| 구간 나누기2                            |                                                              |      |      |      |
+| 중량제한                                |                                                              |      |      |      |
+| 배열에서 이동                           |                                                              |      |      |      |
+| K번째 수                                |                                                              |      |      |      |
+| 놀이공원                                |                                                              |      |      |      |
+| 사다리                                  |                                                              |      |      |      |
+| 선분과 점                               |                                                              |      |      |      |
 
