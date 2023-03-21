@@ -13,6 +13,9 @@
 '''
 
 import sys
+from bisect import bisect_left, bisect_right
+
+# sol 1
 
 # 시작점 찾기
 def find_first_position(l, r):
@@ -64,3 +67,9 @@ if first_index == None:
 # x가 존재한다면
 else:
     print(last_index - first_index + 1)
+
+# sol 2
+count = bisect_right(seq, x) - bisect_left(seq, x)
+
+if count == 0: print(-1)
+else: print(count)
