@@ -6,10 +6,14 @@
 
 ## 구조
 ### 다음 단어들을 Trie 구조로 ["frodo", "front", "kakao", "kaggle"]
-[pic]
-[pic]
+||
+|--|
+|![image2](https://user-images.githubusercontent.com/101445377/226544430-4fd4bdd2-12e8-4bc0-9929-2ef10fa9dc56.png)|
+|![image](https://user-images.githubusercontent.com/101445377/226544425-49e0ebb1-41a5-4c83-b849-c07316f81b93.png)|
 ### 다른 예시
-[pic]
+||
+|--|
+|![image](https://user-images.githubusercontent.com/101445377/226544413-fe50d278-7395-41b4-9951-94c72ab26f03.jpeg)|
 
  - Key는 특정 알파벳을 의미한다.
  - Data는 해당 단어가 끝남을 의미한다.
