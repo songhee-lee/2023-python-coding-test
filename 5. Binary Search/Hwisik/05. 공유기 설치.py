@@ -19,9 +19,9 @@ def binary_search():
     ret = 0
     
     while l <= r:
-        install_count = 1
-        prev = homes[0]
-        mid = l + (r - l) // 2
+        install_count = 1 # 공유기 설치 개수
+        prev = homes[0] # for문에서 비교 대상
+        mid = l + (r - l) // 2 
         
         # 공유기 설치하기
         for home in homes:
