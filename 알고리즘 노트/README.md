@@ -7,3 +7,4 @@
 | [Library](https://github.com/songhee-lee/2023-python-coding-test/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%85%B8%ED%8A%B8/Library.md)  | re |
 | [자주 사용되는 코테 함수](https://github.com/songhee-lee/2023-python-coding-test/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%85%B8%ED%8A%B8/%EC%9E%90%EC%A3%BC%20%EC%82%AC%EC%9A%A9%EB%90%98%EB%8A%94%20%EC%BD%94%ED%85%8C%20%ED%95%A8%EC%88%98.md) | 90도 회전, 소수판별(에라토스테네스의 체) |
 | [정렬](정렬.md) | 위상 정렬 |
+| [자료구조](./자료구조) | [Trie](https://github.com/songhee-lee/2023-python-coding-test/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%85%B8%ED%8A%B8/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%5B%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%5D%20Trie(%ED%8A%B8%EB%9D%BC%EC%9D%B4).md)  |
