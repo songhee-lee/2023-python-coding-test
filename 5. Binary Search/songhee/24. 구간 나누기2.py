@@ -5,15 +5,13 @@
 
 *** 풀이
 - 구간을 나눌 '기준 값'을 변경해 가면서 나눌 구간 찾기
+
+*** 순서대로 잘라야 한다는 사실을 간과해서 틀림
+-> 문제 잘 읽자!
 """
 
 N, M  = map(int, input().split())
 numbers = list(map(int, input().split()))
-
-# 리스트 하나일 때 
-if M == 1:
-    print(numbers[-1] - numbers[0])
-    exit(0)
 
 # 구간 나누기 함수
 def divide(target):
