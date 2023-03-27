@@ -74,16 +74,16 @@ def binary_search(array, target, start, end):
 | 합이 0인 네 정수                        | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/15.%20%ED%95%A9%EC%9D%B4%200%EC%9D%B8%20%EB%84%A4%20%EC%A0%95%EC%88%98.py) |      |      |   [code]()   |
 | 가장 긴 증가하는 부분 수열2             | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/16.%20%EA%B0%80%EC%9E%A5%20%EA%B8%B4%20%EC%A6%9D%EA%B0%80%ED%95%98%EB%8A%94%20%EB%B6%80%EB%B6%84%20%EC%88%98%EC%97%B42.py) |      |      |   [code]()   |
 | 예산                                    | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/17.%20%EC%98%88%EC%82%B0.py) |      |      |  [code]()    |
-| 택배                                    |                                                              |      |      |   [code]()   |
-| 수 찾기                                 |                                                              |      |      |  [code]()    |
-| 나무 자르기                             |                                                              |      |      |   [code]()   |
-| 랜선 자르기                             |                                                              |      |      |   [code]()   |
-| 카드                                    |                                                              |      |      |  [code]()    |
-| 구간 나누기2                            |                                                              |      |      |   [code]()   |
-| 중량제한                                |                                                              |      |      |  [code]()    |
-| 배열에서 이동                           |                                                              |      |      |   [code]()   |
-| K번째 수                                |                                                              |      |      |   [code]()   |
-| 놀이공원                                |                                                              |      |      |   [code]()   |
-| 사다리                                  |                                                              |      |      |  [code]()    |
-| 선분과 점                               |                                                              |      |      |   [code]()   |
+| 택배                                    | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/18.%ED%83%9D%EB%B0%B0.py) ✅ |      |      |   [code]()   |
+| 수 찾기                                 | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/20.%20%EC%88%98%20%EC%B0%BE%EA%B8%B0.py) |      |      |  [code]()    |
+| 나무 자르기                             | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/21.%20%EB%82%98%EB%AC%B4%20%EC%9E%90%EB%A5%B4%EA%B8%B0.py) |      |      |   [code]()   |
+| 랜선 자르기                             | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/22.%20%EB%9E%9C%EC%84%A0%20%EC%9E%90%EB%A5%B4%EA%B8%B0.py) |      |      |   [code]()   |
+| 카드                                    | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/23.%20%EC%B9%B4%EB%93%9C.py) |      |      |  [code]()    |
+| 구간 나누기2                            | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/24.%20%EA%B5%AC%EA%B0%84%20%EB%82%98%EB%88%84%EA%B8%B02.py) |      |      |   [code]()   |
+| 중량제한                                | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/25.%20%EC%A4%91%EB%9F%89%EC%A0%9C%ED%95%9C.py) |      |      |  [code]()    |
+| 배열에서 이동                           | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/26.%20%EB%B0%B0%EC%97%B4%EC%97%90%EC%84%9C%20%EC%9D%B4%EB%8F%99.py) ✅ |      |      |   [code]()   |
+| K번째 수                                | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/27.%20K%EB%B2%88%EC%A7%B8%20%EC%88%98.py) |      |      |   [code]()   |
+| 놀이공원                                | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/28.%20%EB%86%80%EC%9D%B4%20%EA%B3%B5%EC%9B%90.py) ✅ |      |      |   [code]()   |
+| 사다리                                  | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/29.%20%EC%82%AC%EB%8B%A4%EB%A6%AC.py) |      |      |  [code]()    |
+| 선분과 점                               | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/5.%20Binary%20Search/songhee/30.%20%EC%84%A0%EB%B6%84%EA%B3%BC%20%EC%A0%90.py) |      |      |   [code]()   |
 
