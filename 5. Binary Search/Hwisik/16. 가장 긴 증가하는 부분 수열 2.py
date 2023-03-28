@@ -32,7 +32,7 @@ def binary_search(el):
 n = int(sys.stdin.readline())
 a = list(map(int, sys.stdin.readline().split()))
 
-LIS = [a[0]] # 최장 증가 부분 수열 리슷트
+LIS = [a[0]] # 최장 증가 부분 수열 리스트
 
 # 리스트 a 순회
 for el in a:
