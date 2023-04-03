@@ -11,7 +11,7 @@ dp = [ x for x in arr ]
 # Bottom-up
 for i in range(N):
     for j in range(i):
-        if arr[j] < arr[i] and dp[j]+arr[i] > arr[i]:
+        if arr[j] < arr[i] and dp[j]+arr[i] > dp[i]:
             dp[i] = dp[j]+arr[i]
 
 print(max(dp))
