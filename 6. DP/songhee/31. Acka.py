@@ -30,7 +30,7 @@ else:
                 for k in range(2):
                     if i + j + k == 0: continue
                     # a, b, c가 부를 때/ 안부를 때 총 7가지 조합 확인
-                    dp[n][a][b][c] += counting(s-1, a-i, b-j, c-k)
+                    dp[s][a][b][c] += counting(s-1, a-i, b-j, c-k)
         dp[s][a][b][c] %= 1000000007
         return dp[s][a][b][c]
     
