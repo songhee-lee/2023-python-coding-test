@@ -76,4 +76,28 @@ for i in range(3, 100):
 | 병사 배치하기      | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/08.%20%EB%B3%91%EC%82%AC%20%EB%B0%B0%EC%B9%98%ED%95%98%EA%B8%B0.py) ✅ |      |      |      |
 | 못생긴 수          | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/09.%20%EB%AA%BB%EC%83%9D%EA%B8%B4%20%EC%88%98.py) ✅ |      |      |      |
 | 편집 거리          | [code ](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/10.%20%ED%8E%B8%EC%A7%91%20%EA%B1%B0%EB%A6%AC.py) ✅ |      |      |      |
+| 타일 채우기        | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/11.%20%ED%83%80%EC%9D%BC%20%EC%B1%84%EC%9A%B0%EA%B8%B0.py) |      |      |      |
+| 파도반 수열        | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/12.%20%ED%8C%8C%EB%8F%84%EB%B0%98%20%EC%88%98%EC%97%B4.py) |      |      |      |
+| 합분해             | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/13.%20%ED%95%A9%EB%B6%84%ED%95%B4.py) ✅ |      |      |      |
+| 암호코드           | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/14.%20%EC%95%94%ED%98%B8%EC%BD%94%EB%93%9C.py) |      |      |      |
+| 이동하기           | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/15.%EC%9D%B4%EB%8F%99%ED%95%98%EA%B8%B0.py) |      |      |      |
+| 점프               | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/16.%20%EC%A0%90%ED%94%84.py) |      |      |      |
+| 팰린드롬?          | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/17.%20%ED%8C%B0%EB%A6%B0%EB%93%9C%EB%A1%AC.py) |      |      |      |
+| 동전1              | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/18.%20%EB%8F%99%EC%A0%841.py) ✅ |      |      |      |
+| 동전2              | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/19.%20%EB%8F%99%EC%A0%842.py) |      |      |      |
+| 내리막길           | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/20.%20%EB%82%B4%EB%A6%AC%EB%A7%89%20%EA%B8%B8.py) |      |      |      |
+| 파일 합치기        | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/21.%20%ED%8C%8C%EC%9D%BC%20%ED%95%A9%EC%B9%98%EA%B8%B0.py) |      |      |      |
+| 행렬 곱셈 순서     | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/22.%20%ED%96%89%EB%A0%AC%20%EA%B3%B1%EC%85%88%20%EC%88%9C%EC%84%9C.py) |      |      |      |
+| 구간 나누기        | [code ](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/23.%20%EA%B5%AC%EA%B0%84%20%EB%82%98%EB%88%84%EA%B8%B0.py)✅ |      |      |      |
+| 자두나무           | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/24.%20%EC%9E%90%EB%91%90%EB%82%98%EB%AC%B4.py) ✅ |      |      |      |
+| 타일 코드          | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/25.%20%ED%83%80%EC%9D%BC%20%EC%BD%94%EB%93%9C.py) |      |      |      |
+| 기타리스트         | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/26.%20%EA%B8%B0%ED%83%80%EB%A6%AC%EC%8A%A4%ED%8A%B8.py) |      |      |      |
+| 1학년              | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/27.%201%ED%95%99%EB%85%84.py) |      |      |      |
+| 크리보드           | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/28.%20%ED%81%AC%EB%A6%AC%EB%B3%B4%EB%93%9C.py) |      |      |      |
+| 출근 기록          | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/29.%20%EC%B6%9C%EA%B7%BC%20%EA%B8%B0%EB%A1%9D.py) ✅ |      |      |      |
+| BOJ 거리           | [code](https://github.com/songhee-lee/2023-python-coding-test/blob/main/6.%20DP/songhee/30.%20BOJ%20%EA%B1%B0%EB%A6%AC.py) |      |      |      |
+|                    |                                                              |      |      |      |
+|                    |                                                              |      |      |      |
+|                    |                                                              |      |      |      |
+|                    |                                                              |      |      |      |
 
