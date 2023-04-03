@@ -7,17 +7,15 @@
 N = int(input())
 maps = [ list(map(int, input().split())) for _ in range(N) ]
 
-answer = 0
-
 dp = [[0]*N for _ in range(N)]
 dp[0][0] = 1
 
 for i in range(N):
     for j in range(N):
         x = maps[i][j]
-        if x == 0:   # 끝
+        if i == N-1 and j == N-1 :   # 끝
             print(dp[i][j])
-            break
+            exit(0)
         
         # 오른쪽
         if j + x < N:
@@ -25,6 +23,8 @@ for i in range(N):
         # 아래
         if i + x < N:
             dp[i+x][j] += dp[i][j]
+
+print(0)
 
 """메모리 초과
 from collections import deque

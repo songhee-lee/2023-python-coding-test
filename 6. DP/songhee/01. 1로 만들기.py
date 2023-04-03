@@ -10,15 +10,10 @@
 X = int(input())
 
 # dp[x] : x를 1로 만드는데 필요한 최소 연산 횟수
-dp = [ float('inf') ] * (X+1)
-
-# dp 초깃값 설정
-dp[1] = 0
-dp[2] = dp[3] = dp[5] = 1
-dp[4] = 2
+dp = [ 0 ] * (X+1)
 
 # bottom-up
-for i in range(6, X+1):
+for i in range(2, X+1):
     dp[i] = dp[i-1] + 1     # 1빼기
     if i % 5 == 0:
         dp[i] = min(dp[i//5]+1, dp[i])

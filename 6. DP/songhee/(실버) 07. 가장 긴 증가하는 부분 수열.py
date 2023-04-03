@@ -15,4 +15,4 @@ for i in range(N):
         if arr[j] < arr[i] and dp[j]+1 > dp[i]:
             dp[i] = dp[j]+1
 
-print(dp[N-1])
+print(max(dp))
