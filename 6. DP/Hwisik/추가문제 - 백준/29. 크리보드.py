@@ -16,6 +16,8 @@
         - A를 1개 출력하고 복사하는 경우
     -> 붙여넣기는 4번 이상 하지 않아도 된다. 3번만 해도 최대로 만들 수 있다.
         (https://blog.naver.com/mym0404/222323009491)
+
+✅ 다시 풀기
 '''
 from pprint import pprint
 
