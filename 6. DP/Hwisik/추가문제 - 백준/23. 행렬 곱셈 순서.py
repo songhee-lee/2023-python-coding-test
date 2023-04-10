@@ -12,7 +12,7 @@
 - ex) A B C D => ABCD
         -> A(BCD) -> A(B(CD)) or A((BC)D)
         -> (AB)(CD) 
-        -> (ABC)(D) -> (A(BC))(D) or ((AB)C)(D
+        -> (ABC)(D) -> (A(BC))(D) or ((AB)C)(D)
         
 ✅ 다시 풀기, 파일 합치기와 유사한 문제, Python3는 시간 초과
 '''
