@@ -18,3 +18,19 @@ n = int(input())
 guests = list(map(int, input().split()))
 max_n = int(input())
 
+s = [0]
+for guest in guests:
+    s.append(s[-1] + guest)
+
+dp = [[0] * (n + 1) for _ in range(4)]
+
+for i in range(1, 4):
+    for j in range(i * max_n, n + 1):
+        if i == 1:
+            # 소형 기관차 1대 끌 경우 -> 최대로 끌 수 있는 객차 수만큼 끌기(=> 구간합 비교)
+            dp[i][j] = max(dp[i][j - 1], s[j] - s[j - max_n])
+        else:
+            # 현재 객차를 포함하지 않는 경우 and 포함하는 경우
+            dp[i][j] = max(dp[i][j - 1], dp[i - 1][j - max_n] + s[j] - s[j - max_n])
+
+print(dp[3][n])
