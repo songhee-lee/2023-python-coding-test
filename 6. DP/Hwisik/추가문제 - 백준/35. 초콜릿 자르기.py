@@ -53,4 +53,19 @@ def dp_helper():
 def math_helper():
     print(n * m - 1)
 
-math_helper()
+# math_helper()
+
+dp = [[float('inf')] * (m + 1) for _ in range(n + 1)]
+
+for i in range(n + 1):
+    dp[i][1] = 1
+for i in range(m + 1):
+    dp[1][i] = 1
+
+for i in range(2, n + 1):
+    for j in range(2, m + 1):
+        
+        for k in range(1, i // 2 + 1):
+            dp[i][j] = min(dp[i][j], dp[k][j] + dp[i - k][j] + 1)
+
+print(dp[n][m])
