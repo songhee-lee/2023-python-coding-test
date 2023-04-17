@@ -29,6 +29,5 @@ for i in range(1, n + 1):
     
     if count == n:
        ret += 1
-
-pprint.pprint(graph)
+       
 print(ret) 
