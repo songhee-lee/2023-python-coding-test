@@ -17,8 +17,8 @@
 | week6 | 2023.03.21 | [5. 이진 탐색 Binary Search (기초 문제 + 실전 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/5.%20Binary%20Search) & [2022 KAKAO TECH INTERNSHIP 해설](https://github.com/songhee-lee/2023-python-coding-test/tree/main/%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C/2022%20KAKAO%20TECH%20INTERNSHIP) |
 | week7 | 2023.03.28 | [6. 다이나믹 프로그래밍 DP (기초 문제 + 실전 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/6.%20DP) & [5. 이진 탐색 (추가문제)]((https://github.com/songhee-lee/2023-python-coding-test/tree/main/5.%20Binary%20Search)) |
 | week8 | 2023.04.03 | [6. 다이나믹 프로그래밍 DP (추가 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/6.%20DP)                 |
-| week8 | 2023.04.07 |  2021 카카오 채용연계형 인턴십  |
 | week9 | 2023.04.11 | [6. 다이나믹 프로그래밍 DP (추가 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/6.%20DP)                  |
-| week10 | 2023. |                  |
+| week9 | 2023.04.14 | 2022 KAKAO BLIND RECRUITMENT |
+| week10 | 2023.04.18 | [7. 최단 경로 (기초 문제 + 실전 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/7.%20Shortest%20Path)                 |
 | week11 | 2023. |                  |
 
