@@ -20,5 +20,5 @@
 | week9 | 2023.04.11 | [6. 다이나믹 프로그래밍 DP (추가 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/6.%20DP)                  |
 | week9 | 2023.04.14 | 2022 KAKAO BLIND RECRUITMENT |
 | week10 | 2023.04.18 | [7. 최단 경로 (기초 문제 + 실전 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/7.%20Shortest%20Path)                 |
-| week11 | 2023. |                  |
+| week11 | 2023.04.25 | [8. 기타 그래프 이론 (기초 문제 + 실전 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/8.%20Graph%20Theory)                 |
 
