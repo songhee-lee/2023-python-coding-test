@@ -1,3 +1,13 @@
+'''
+- 동일 유저에 대한 신고 횟수는 1회로 간주
+- k번 이상 신고된 유저는 정지 -> 해당 유저를 신고한 모든 유저에게 정지 사실을 메일로 알림
+- 각 유저가 받은 메일 수를 return
+
+✅ 2 <= id_list 길이 <= 1,000
+✅ 1 <= report 길이 <= 200,000
+✅ 1 <= k <= 200
+'''
+
 from collections import defaultdict
 
 # sol 1 - My sol
