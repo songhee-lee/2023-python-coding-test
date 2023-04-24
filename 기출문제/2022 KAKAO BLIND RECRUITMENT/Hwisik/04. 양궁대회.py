@@ -1,5 +1,14 @@
-# test case 8, 18 틀림
+'''
+- 라이언은 어피치를 가장 큰 점수 차이로 이기려고 함
+- n발의 화살을 알맞게 조합해야 한다.
+- 라이언의 n발의 화살을 (10점 ~ 0점까지) 순서대로 리스트에 담아 return
+- 우승 X or 비기기 -> return [-1]
+- 가장 큰 점수 차이로 이길수 있는 경우의 수가 여러 개 -> 가장 낮은 점수를 맞힌 경우를 return
 
+- 조합 계산에서, dfs 말고 combinations_with_replacement를 사용해도 된다.
+'''
+
+# test case 8, 18 틀림
 from collections import defaultdict
 
 answer = []
@@ -35,7 +44,7 @@ def dfs(n, cnt, idx, a, r):
             # 가장 큰 점수차이를 갖는 경우를 저장 & 가장 큰 점수 차이가 여러 번 있을 수 있으므로, 
             if _max <= (sum_r - sum_a):
                 _max = sum_r - sum_a # 점수 차이 갱신
-                dic[_max].append(list(r))
+                dic[_max].append(list(r)) # 가장 큰 점수 차이를 갖는 경우의 수를 저장
                 return 
     
     # 0점부터 10점까지
