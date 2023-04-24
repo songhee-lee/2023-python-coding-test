@@ -11,7 +11,7 @@ for _ in range(int(input())):
     for __ in range(n):
         graph.append(list(map(int,input().split())))
     
-    distance = [[INF]*(n+1) for ___ in range(n)]
+    distance = [[INF]*(n) for ___ in range(n)]
 
     distance[0][0] = graph[0][0]
     q = []
