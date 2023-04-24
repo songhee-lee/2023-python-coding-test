@@ -1,0 +1,46 @@
+import sys
+from collections import deque
+import copy
+
+# 위상 정렬 함수
+def topology_sort():
+    result = copy.deepcopy(time) # 알고리즘 수행 결과를 담을 리스트
+    q = deque() # 큐 기능을 위한 deque 라이브러리 사용
+    
+    # 처음 시작할 때는 진입차수가 0인 노드를 큐에 삽입
+    for i in range(1, n + 1):
+        if indegree[i] == 0:
+            q.append(i)
+            
+    # 큐가 빌 때까지 반복
+    while q:
+        cur = q.popleft() # 큐에서 원소 꺼내기
+        
+        # 해당 원소와 연결된 노드들의 진입차수에서 1 빼기
+        for i in graph[cur]:
+            result[i] = max(result[i], result[cur] + time[i])
+            indegree[i] -= 1
+            
+            # 새롭게 진입차수가 0이 되는 노드를 큐에 삽입
+            if indegree[i] == 0:
+                q.append(i)
+
+    # 위상 정렬을 수행한 결과 출력
+    for i in range(1, n + 1):
+        print(result[i])
+    
+n = int(sys.stdin.readline())
+
+graph = [[] for _ in range(n + 1)] # 각 노드에 연결된 간선 정보를 담기 위한 연결 리스트 초기화
+indegree = [0] * (n + 1) # 각 노드의 진입차수를 0으로 초기화
+time = [0] * (n + 1) # 각 강의 시간을 0으로 초기화
+
+for i in range(1, n + 1):
+    data = list(map(int, sys.stdin.readline().split()))
+    time[i] = data[0] # 첫 번째 수는 시간 정보를 담고 있음
+    
+    for x in data[1:-1]: # -1은 입력의 마지막에 -1이 들어가기 때문에
+        indegree[i] += 1
+        graph[x].append(i)
+        
+topology_sort()
