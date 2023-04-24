@@ -36,7 +36,7 @@ for i in range(1,n+1):
     if (max_dist < distance[i]):
         result = i
         max_dist = distance[i]
-        cnt = 0
+        cnt = 1
     elif (max_dist== distance[i]):
         cnt += 1
 
