@@ -2,8 +2,19 @@
 
 📝 [스터디 목표 및 진행 방식](https://github.com/songhee-lee/2023-python-coding-test/blob/main/ETC/%EC%8A%A4%ED%84%B0%EB%94%94%20%EB%AA%A9%ED%91%9C%20%EB%B0%8F%20%EC%A7%84%ED%96%89%20%EB%B0%A9%EC%8B%9D.md)
 
-
 ---
+
+| Week   | Date       | Subject                             |
+| ------ | ---------- | ----------------------------------- |
+| Week12 | 2023.05.02 | 프로그래머스 4개 문제 / 주제 : Hash |
+|        |            |                                     |
+|        |            |                                     |
+
+
+
+
+
+### 이것이 코딩테스트다
 
 | week  | date       | subject                                                      |
 | ----- | ---------- | ------------------------------------------------------------ |
@@ -21,4 +32,6 @@
 | week9 | 2023.04.14 | 2022 KAKAO BLIND RECRUITMENT |
 | week10 | 2023.04.18 | [7. 최단 경로 (기초 문제 + 실전 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/7.%20Shortest%20Path)                 |
 | week11 | 2023.04.25 | [8. 기타 그래프 이론 (기초 문제 + 실전 문제)](https://github.com/songhee-lee/2023-python-coding-test/tree/main/8.%20Graph%20Theory)                 |
+
+
 
