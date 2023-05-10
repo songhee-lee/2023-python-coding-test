@@ -1,6 +1,8 @@
 # 2023-python-coding-test
 
-📝 [스터디 목표 및 진행 방식](https://github.com/songhee-lee/2023-python-coding-test/blob/main/ETC/%EC%8A%A4%ED%84%B0%EB%94%94%20%EB%AA%A9%ED%91%9C%20%EB%B0%8F%20%EC%A7%84%ED%96%89%20%EB%B0%A9%EC%8B%9D.md)
+📝 [2차 스터디 목표 및 진행 방식](https://github.com/songhee-lee/2023-python-coding-test/blob/main/ETC/2%EC%B0%A8%20%EC%8A%A4%ED%84%B0%EB%94%94%20%EB%AA%A9%ED%91%9C%20%EB%B0%8F%20%EC%A7%84%ED%96%89%20%EB%B0%A9%EC%8B%9D.md)
+
+
 
 ---
 
@@ -10,11 +12,15 @@
 | Week14 | 2023.05.10 | 프로그래머스 2개 문제 / 주제 : 스택/큐 |
 | Week15 | 2023.05.16 | 프로그래머스 3개 문제 / 주제 : BFS/DFS |
 
+<br><br><br>
 
 
 
+---
 
 ### 이것이 코딩테스트다
+
+📝 [스터디 목표 및 진행 방식](https://github.com/songhee-lee/2023-python-coding-test/blob/main/ETC/%EC%8A%A4%ED%84%B0%EB%94%94%20%EB%AA%A9%ED%91%9C%20%EB%B0%8F%20%EC%A7%84%ED%96%89%20%EB%B0%A9%EC%8B%9D.md)
 
 | week  | date       | subject                                                      |
 | ----- | ---------- | ------------------------------------------------------------ |
