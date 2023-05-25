@@ -11,12 +11,12 @@ def solution(board, skill):
         type = s[0]
         r1, c1, r2, c2, degree = s[1], s[2], s[3], s[4], s[5]
 
-        if type == 1:  # destroy
+        if type == 1:  # 파괴할 때
             preSum[r1][c1] += -degree
             preSum[r2 + 1][c1] += degree
             preSum[r1][c2 + 1] += degree
             preSum[r2 + 1][c2 + 1] += -degree
-        else:  # repair
+        else:  # 회복 할 때
             preSum[r1][c1] += degree
             preSum[r2 + 1][c1] += -degree
             preSum[r1][c2 + 1] += -degree
