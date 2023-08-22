@@ -1,4 +1,4 @@
-# .ref
+# .ref(표 그려서 다시 풀어보기)
 
 t = int(input())
 k = int(input())
